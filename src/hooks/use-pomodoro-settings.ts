@@ -2,8 +2,8 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import {
   getPomodoroSettings,
   updatePomodoroSettings,
-} from "../lib/pomodoro_settings";
-import type { PomodoroSettingsUpdate } from "../types/pomodoro-settings";
+} from "@lib/pomodoro_settings";
+import type { PomodoroSettingsUpdate } from "@localtypes/pomodoro-settings";
 
 export function usePomodoroSettings() {
   return useQuery({

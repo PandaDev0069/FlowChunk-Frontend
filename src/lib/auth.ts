@@ -1,8 +1,8 @@
-import { apiFetch } from "./api";
-import type { LoginRequest, TokenResponse } from "../types/auth";
+import { apiFetch } from "@lib/api";
+import type { LoginRequest, LoginResponse } from "@localtypes/auth";
 
 export function login(data: LoginRequest) {
-  return apiFetch<TokenResponse>("/users/login", {
+  return apiFetch<LoginResponse>("/users/login", {
     method: "POST",
     body: JSON.stringify(data),
   });

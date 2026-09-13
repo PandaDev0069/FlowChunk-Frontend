@@ -4,11 +4,11 @@ import {
   createPomodoroSession,
   updatePomodoroSession,
   getActivePomodoroSession,
-} from "../lib/pomodoro_session";
+} from "@lib/pomodoro_session";
 import type {
   PomodoroSessionCreate,
   PomodoroSessionUpdate,
-} from "../types/pomodoro-session";
+} from "@localtypes/pomodoro-session";
 
 export function usePomodoroSessions() {
   return useQuery({

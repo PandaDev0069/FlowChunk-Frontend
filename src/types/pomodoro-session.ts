@@ -1,4 +1,4 @@
-import type { SessionType } from "./pomodoro-settings";
+import type { SessionType } from "@localtypes/pomodoro-settings";
 
 export interface PomodoroSession {
   id: string;
