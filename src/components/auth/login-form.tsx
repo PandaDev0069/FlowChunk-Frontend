@@ -99,6 +99,7 @@ export default function LoginForm() {
         <button
           type="button"
           className="font-semibold text-white hover:underline"
+          onClick={() => router.push("/register")}
         >
           Register for free
         </button>
